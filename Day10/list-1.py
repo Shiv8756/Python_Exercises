@@ -12,3 +12,16 @@ def deep_flatten(lst):
 complex_list = [1, [2, [3, 4], 5], 6, [7, 8]]
 flat = deep_flatten(complex_list)
 print(flat)
+
+
+def flatlist(lst):
+    result=[]
+    for i in lst:
+        if isinstance(i,list):
+            result.extend(flatlist(i))
+        else:
+            result.append(i)
+    return result
+
+
+lst=[1, [2, [3, 4], 5], 6, [7, 8]]

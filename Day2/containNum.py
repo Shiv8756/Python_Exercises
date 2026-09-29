@@ -1,8 +1,9 @@
-n1="Python"
+n1="Python12"
 Flag=False
 for i in n1:
-    if i in "1234567890":
-        Flag=True
+    if i.isdigit():
+        print(True)
+        break
 
 
-print(Flag)
+#print(Flag)

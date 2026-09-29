@@ -6,7 +6,7 @@ while n>0:
     temp=n%10
     if temp>largest:
         largest=temp
-    if temp<smallest:
+    elif temp<smallest:
         smallest=temp
 
     n=n//10

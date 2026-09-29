@@ -3,9 +3,9 @@ target=7
 for i in range(len(l1)):
     for j in range(len(l1[i])):
         if l1[i][j]==target:
-            print("Element found in the list")
+            print("Element found in the list",i,j)
             break
-    else:
-        print("Not in the nested list")
+else:
+    print("Not in the nested list")
 
     #print("Element not found")

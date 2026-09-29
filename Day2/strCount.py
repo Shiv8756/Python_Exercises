@@ -7,3 +7,5 @@ def strWordCount(st1,word):
     return count
 str= "Emma is good developer. Emma is a writer"
 print(strWordCount(str,"Emma"))
+
+print(str.count("Emma"))
